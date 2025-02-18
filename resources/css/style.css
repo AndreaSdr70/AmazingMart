@@ -1,0 +1,116 @@
+:root{
+    --lavender: rgb(229, 212, 206);
+    --brightpink: rgb(0, 0, 0);
+    --licorice: rgb(50, 67, 118);
+}
+
+.backgrounddark{
+    background-color: var(--licorice);
+}
+
+.backgroundgeneral{
+    background-color: var(--lavender);
+}
+
+.textred{
+    color: var(--brightpink);
+}
+
+.textwhite{
+    color: var(--lavender);
+}
+
+body{
+    background-color: var(--lavender);
+}
+
+a{
+    text-decoration: none;
+    color: var(--brightpink);
+    transition: 0.4s;
+}
+
+a:hover{
+    color: var(--lavender);
+    text-shadow: 1px 1px 1px var(--lavender), -1px -1px 1px var(--lavender);
+}
+
+a:focus{
+    color: var(--brightpink) !important;
+}
+
+.nav-link{
+    color: var(--brightpink);
+}
+
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--lavender);
+    background-color: rgba(0, 0, 0, 0.5); /* Nero semi-trasparente */
+    padding: 5px;
+    display: inline-block;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+i{
+    transition: 0.4s;
+}
+
+i:hover{
+    color: var(--lavender);
+    transform: scale(1.2);
+}
+
+.height-custom{
+    min-height: 60vh;
+}
+
+.height-custom-full{
+    height: 100vh;
+}
+
+.width-custom-button{
+    width: 25%;
+}
+
+.bg-img{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.60), transparent), url(/public/herohead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-w{
+    width: 20rem;
+}
+
+footer .social-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-top: 1px solid #ccc;
+}
+
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
+
+.card-text{
+    color: var(--lavender);
+}
+
+@media screen and (max-width: 991px){
+    #notify{
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
